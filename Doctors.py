@@ -115,11 +115,11 @@ def create_appointment(doctor_id):
 
     return appointment_schema.jsonify(appointment)
 
-@app.route('/doctors/<int:doctor_id>/<int:appointment_id>', methods=['DELETE'])
+@app.route('/doctors/<int:doctor_id>/<int:appointment_id>/', methods=['DELETE'])
 def delete_appointment(doctor_id, appointment_id):
     appointment = AppointmentModel.query.get(appointment_id)
 
-    db.session.delete(appointment_id)
+    db.session.delete(appointment)
     db.session.commit()
     
     return appointment_schema.jsonify(appointment)
