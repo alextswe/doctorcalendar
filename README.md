@@ -2,7 +2,7 @@
 2. Run "python3 Doctors.py"
 
 For each HTTP request: \
-Run these against the localhost address that is set up. My base address was http://127.0.0.1:5000/ \
+Run these against the localhost address that is set up. My base address was http://127.0.0.1:5000/
 
 1.Send a GET request to /doctors/ \
 2.Send a GET request to /doctors/ with parameters /doctor_id/date/ \
