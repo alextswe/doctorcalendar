@@ -11,6 +11,7 @@ Run these against the localhost address that is set up. My base address was http
 	ex. DELETE http://127.0.0.1:5000/doctors/1/
 4.Send a POST request to /doctors/ with parameters /doctor_id/ with a JSON file with the paramaters firstname, lastname, datetime, kind.
 	ex. POST http://127.0.0.1:5000/doctors/1/
-		{"firstname":"Alex","lastname":"Tran","datetime":"2018-01-02T22:20:00","kind":"New Patient"}
+	{"firstname":"Alex","lastname":"Tran","datetime":"2018-01-02T22:20:00","kind":"New Patient"}
 
-I have also added a POST to /doctors/ requiring a JSON with parameters firstname, lastname to add doctors for testing. {"firstname":"Doctor","lastname":"Tran"}
+I have also added a POST to /doctors/ requiring a JSON with parameters firstname, lastname to add doctors for testing.
+{"firstname":"Doctor","lastname":"Tran"}
